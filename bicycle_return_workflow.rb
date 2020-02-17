@@ -8,6 +8,10 @@ class BicycleReturnWorkflow
         ((return_time - checkout_time) / 3600).round
     end
 
+    def calculate_rental_price(hours, price_per_hour)
+        hours * price_per_hour
+    end
+
     def run
 
     end
