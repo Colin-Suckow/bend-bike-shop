@@ -1,5 +1,7 @@
 class BicycleReturnWorkflow
-    def initalize()
+
+    def initalize(rental)
+        @rental = rental
     end
 
     def run
