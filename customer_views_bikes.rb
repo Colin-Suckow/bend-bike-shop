@@ -1,11 +1,9 @@
-# filename: customer_reserves_bike.rb
+# filename: customer_views_bikes.rb
 
-require_relative 'customer_views_bikes_workFlow'
-require_relative 'bicycle'
-require_relative 'customer'
+require_relative 'customer_views_bikes_workflow.rb'
 
-workflow = CustomerViewsBikesWorkflow.new ...
+bike_list = [Bike.new(:mtn), Bike.new(:bmx), Bike.new(:road)]
 
-workflow.run
+workflow = CustomerViewsBikesWorkflow.new(bike_list)
 
-puts ...
+puts workflow.bike_list

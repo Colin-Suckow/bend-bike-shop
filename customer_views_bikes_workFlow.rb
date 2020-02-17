@@ -1,13 +1,26 @@
-# filename: bicycle_reservation_workflow.rb
+# filename: customer_views_bikes_workflow.rb
 
 class CustomerViewsBikesWorkflow
+
+  attr_accessor :bike_list
+
+  def initialize(bike_list)
+    @bike_list = bike_list
+  end
+
+  def filter_mtn
+  end
+
+  def filter_bmx
+  end
+
+  def filter_road
+  end
   
-  def initialize(...)
+end
+
+class Bike
+  def initialize(type)
+    @type = type
   end
-
-  # functions ...
-
-  def run
-  end
-
 end
