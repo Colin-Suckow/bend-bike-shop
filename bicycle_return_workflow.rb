@@ -1,3 +1,5 @@
+require 'date'
+
 class BicycleReturnWorkflow
 
     def initalize(rental)
