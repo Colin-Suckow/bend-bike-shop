@@ -15,6 +15,10 @@ class BicycleReturnWorkflow
     end
 
     def run
+        puts "The final bike price is: " 
+        calculate_rental_price(
+            calculate_hours_rented(self.rental.checkout_time, DateTime.now),
+            self.rental.calculate_price_per_hour(self.rental.bike.type))
 
     end
 end
