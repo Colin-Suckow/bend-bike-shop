@@ -1,7 +1,7 @@
 class Bicycle
 
-  def initalize()
-    
+  def initalize(type)
+    @type = type
   end
 
 end
