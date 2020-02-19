@@ -6,4 +6,5 @@ bike_list = [Bike.new(:mtn), Bike.new(:bmx), Bike.new(:road)]
 
 workflow = CustomerViewsBikesWorkflow.new(bike_list)
 
-puts workflow.bike_list
+workflow.run
+
