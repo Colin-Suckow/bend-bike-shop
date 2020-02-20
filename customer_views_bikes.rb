@@ -5,9 +5,9 @@ require_relative 'bike.rb'
 require_relative 'bike_list.rb'
 
 bike_list = BikeList.new [ 
-  Bike.new(:mtn, bike_list),
-  Bike.new(:bmx, bike_list),
-  Bike.new(:road, bike_list)
+  Bike.new(:mtn),
+  Bike.new(:bmx),
+  Bike.new(:road)
 ]
 
 workflow = CustomerViewsBikesWorkflow.new(bike_list)
