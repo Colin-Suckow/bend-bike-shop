@@ -10,7 +10,7 @@ bike_list = BikeList.new [
   Bike.new(:road)
 ]
 
-workflow = CustomerViewsBikesWorkflow.new(bike_list)
+workflow = CustomerViewsBikesWorkflow.new(bike_list, :mountain)
 
 workflow.run
 
