@@ -10,4 +10,8 @@ class Bike
     @category = category
   end
 
+  def to_s
+  	"Bike: #{category}" 
+  end
+
 end
