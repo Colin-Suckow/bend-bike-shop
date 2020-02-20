@@ -10,7 +10,7 @@ class CustomerViewsBikesWorkflow
   end
   
   def run
-    puts bike_list
+    puts bike_list.of_category(category)
   end
 
 end
