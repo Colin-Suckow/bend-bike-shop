@@ -5,7 +5,7 @@ require_relative 'bike.rb'
 require_relative 'bike_list.rb'
 
 bike_list = BikeList.new [ 
-  Bike.new(:mtn),
+  Bike.new(:mountain),
   Bike.new(:bmx),
   Bike.new(:road)
 ]

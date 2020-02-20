@@ -2,8 +2,12 @@ require_relative 'bike_list.rb'
 
 class Bike
 
-  def initialize(type)
-    @type = type
+	CATEGORIES = [:mountain, :bmx, :road]
+
+	attr_reader :category
+
+  def initialize(category)
+    @category = category
   end
 
 end
