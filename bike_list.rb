@@ -1,7 +1,9 @@
 
 
 class BikeList
-	initialize()
-		@list = []
-	end
+
+  def initialize(list = [])
+    @bikes = []
+  end
+
 end
