@@ -6,16 +6,17 @@ require_relative 'bike_list.rb'
 
 bike_list = BikeList.new [ 
   Bike.new(:mountain),
+  Bike.new(:mountain),
   Bike.new(:bmx),
   Bike.new(:road)
 ]
 
-# category = gets.chomp!.to_sym
+category = gets.chomp!.to_sym
 
-# Bike::CATEGORIES
-
-
-workflow = CustomerViewsBikesWorkflow.new(bike_list, [:bmx, :mountain])
-
-workflow.run
+if Bike::CATEGORIES.include?(category)
+  workflow = CustomerViewsBikesWorkflow.new(bike_list, [category])
+  workflow.run
+else
+  puts "category not available"
+end
 
