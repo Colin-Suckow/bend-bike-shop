@@ -10,7 +10,12 @@ bike_list = BikeList.new [
   Bike.new(:road)
 ]
 
-workflow = CustomerViewsBikesWorkflow.new(bike_list, :bmx)
+# category = gets.chomp!.to_sym
+
+# Bike::CATEGORIES
+
+
+workflow = CustomerViewsBikesWorkflow.new(bike_list, [:bmx, :mountain])
 
 workflow.run
 
