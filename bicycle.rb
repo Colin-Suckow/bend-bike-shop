@@ -1,17 +1,18 @@
-require_relative 'bike_list.rb'
+require_relative 'bike_list.rb'  
 
-class Bike
+class Bicycle
+  
+  TYPES = [:mountain, :bmx, :road]
 
-	CATEGORIES = [:mountain, :bmx, :road]
+	attr_accessor :type
 
-	attr_reader :category
-
-  def initialize(category)
-    @category = category
+  def initialize(type)
+    @type = type
   end
-
-  def to_s
-  	"Bike: #{category}" 
+  
+   def to_s
+  	"Bike: #{type}" 
   end
 
 end
+
