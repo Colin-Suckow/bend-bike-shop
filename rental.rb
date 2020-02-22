@@ -2,7 +2,7 @@ require 'date'
 
 class Rental
 
-    attr_accessor :checkout_time, :duration_in_hours, :bike
+    attr_accessor :checkout_time, :duration_in_hours, :bike, :late_fee
 
     def initialize(bike, duration, checkout_time = DateTime.now(), late_fee)
         @checkout_time = checkout_time
