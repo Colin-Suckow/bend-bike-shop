@@ -14,7 +14,7 @@ class Rental
     def calculate_price_per_hour(bike_type)
     	
     	case bike_type
-    	when :peformance
+    	when :performance
     		10
     	when :recreational
     		7
