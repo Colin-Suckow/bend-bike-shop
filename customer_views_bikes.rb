@@ -5,15 +5,15 @@ require_relative 'bicycle.rb'
 require_relative 'bike_list.rb'
 
 bike_list = BikeList.new [ 
-  Bike.new(:mountain),
-  Bike.new(:mountain),
-  Bike.new(:bmx),
-  Bike.new(:road)
+  Bicycle.new(:mountain),
+  Bicycle.new(:mountain),
+  Bicycle.new(:bmx),
+  Bicycle.new(:road)
 ]
 
 category = gets.chomp!.to_sym
 
-if Bike::CATEGORIES.include?(category)
+if Bicycle::TYPES.include?(category)
   workflow = CustomerViewsBikesWorkflow.new(bike_list, [category])
   workflow.run
 else

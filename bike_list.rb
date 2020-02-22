@@ -9,7 +9,7 @@ class BikeList
   end
 
   def of_category(category)
-  	bikes.select { |bike| category.include?(bike.category) }
+  	bikes.select { |bike| category.include?(bike.type) }
   	# result = []
   	# for bike in bikes
   	# 	if bike.category == category
