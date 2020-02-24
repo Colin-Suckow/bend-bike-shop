@@ -11,12 +11,12 @@ bike_list = BikeList.new [
   Bicycle.new(:road)
 ]
 
-category = gets.chomp!.to_sym
+type = gets.chomp!.to_sym
 
-if Bicycle::TYPES.include?(category)
-  workflow = CustomerViewsBikesWorkflow.new(bike_list, [category])
+if Bicycle::TYPES.include?(type)
+  workflow = CustomerViewsBikesWorkflow.new(bike_list, [type])
   workflow.run
 else
-  puts "category not available"
+  puts "Type not available"
 end
 
