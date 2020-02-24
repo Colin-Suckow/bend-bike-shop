@@ -2,15 +2,15 @@
 
 class CustomerViewsBikesWorkflow
 
-  attr_accessor :bike_list, :category
+  attr_accessor :bike_list, :type
 
-  def initialize(bike_list, category)
+  def initialize(bike_list, type)
     @bike_list = bike_list
-    @category = category
+    @type = type
   end
   
   def run
-    puts bike_list.of_type(category)
+    puts bike_list.of_type(type)
   end
 
 end
