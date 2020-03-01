@@ -1,6 +1,7 @@
 class UpdatePrice
-    def initialize
-
+    def initialize(rentalPrice, rental)
+    	@rentalPrice = rentalPrice
+    	@rental = rental
     end
 
     def run
