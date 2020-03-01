@@ -1,8 +1,21 @@
+require_relative 'bicycle'
+require_relative 'rental'
+require_relative 'customer'
 require_relative 'cancel_rental_workflow'
 
-test_bike = Bicycle.new(:performance)
-test_rental = Rental.new(test_bike, 2, DateTime.now() + 3, 0) # Reserved for checkout
-john_doe = Customer.new({22 => test_rental})
-workflow = CancelRentalWorkflow.new(john_doe)
+test_bike_1 = Bicycle.new(:mountain)
+test_rental_1 = Rental.new(22, test_bike_1, 2, DateTime.now() + 3, 0) # Reserved for checkout
 
-workflow.run
+test_bike_2 = Bicycle.new(:bmx)
+test_rental_2 = Rental.new(53, test_bike_2, 2, DateTime.now() + 3, 0) # Reserved for checkout
+
+test_customer = Customer.new("john", "doe", {test_rental_1.id => test_rental_1, test_rental_2.id => test_rental_2})
+#workflow = CancelRentalWorkflow.new(test_customer)
+
+# workflow.run
+
+# This goes in the workflow.
+puts "Hi #{test_customer.first}, which rental would you like to cancel?\n"
+for rental in test_customer.rental_list
+	puts rental
+end
