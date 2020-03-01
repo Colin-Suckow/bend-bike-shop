@@ -1,5 +1,7 @@
 class RentalPrice
 
+	attr_accessor :lateFee, :hourlyPrice
+
 	def initialize(hourlyPrice,lateFee)
 		@hourlyPrice = hourlyPrice
 		@lateFee = lateFee
