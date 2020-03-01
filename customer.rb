@@ -16,12 +16,4 @@ class Customer
     @rental_list.delete(rental_id)
   end
 
-  # def to_s()
-  #   result = ""
-  #   for rental in rental_list
-  #     result += rental.to_s + "\n"
-  #   end
-  #   return result
-  # end
-
 end
