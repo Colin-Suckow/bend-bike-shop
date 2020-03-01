@@ -27,7 +27,8 @@ class Rental
     end
 
     def to_s
-        "ID: #{id}\t#{bike}"
+
+        "#{bike}"
     end
 
 end

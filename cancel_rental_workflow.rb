@@ -9,16 +9,18 @@ class CancelRentalWorkflow
 
   def run
     puts "Hi #{customer.first}, which rental would you like to cancel?\n"
-    for rental in customer.rental_list
-      puts rental
+    customer.rental_list.each do |key, value|
+      puts "ID: #{key} \t #{value}"
     end
 
     customer.remove_rental(gets.chomp!.to_i)
 
     puts "Your remaining rentals:\n"
-    for rental in customer.rental_list
-      puts rental
+    
+    customer.rental_list.each do |key, value|
+      puts "ID: #{key} \t #{value}"
     end
+
   end
 
 end
