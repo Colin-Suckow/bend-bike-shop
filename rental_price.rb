@@ -1,14 +1,14 @@
 class RentalPrice
 
-	attr_accessor :lateFee, :hourlyPrice
+	attr_accessor :late_fee, :hourly_price
 
-	def initialize(hourlyPrice,lateFee)
-		@hourlyPrice = hourlyPrice
-		@lateFee = lateFee
+	def initialize(hourly_price,late_fee)
+		@hourly_price = hourly_price
+		@late_fee = late_fee
 	end
 
   def calculate_rental_price(hours, is_late)
-      hours * @hourlyPrice + (is_late ? @lateFee : 0)
+      hours * @hourly_price + (is_late ? @late_fee : 0)
   end
 
 end
