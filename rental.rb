@@ -4,11 +4,11 @@ class Rental
 
   attr_accessor :id, :checkout_time, :duration_in_hours, :bike, :rental_price
 
-  def initialize(id, bike, reserved_duration, checkout_time = DateTime.now(), rental_price)
+  def initialize(id, bike, duration_in_hours, checkout_time = DateTime.now(), rental_price)
     @id = id
     @bike = bike
     @checkout_time = checkout_time
-    @duration_in_hours = duration
+    @duration_in_hours = duration_in_hours
     @rental_price = rental_price
   end
 
