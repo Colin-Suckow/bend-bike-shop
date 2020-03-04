@@ -1,10 +1,10 @@
-# filename: customer_views_bikes.rb
+# filename: view_inventory.rb
 
-require_relative 'customer_views_bikes_workflow.rb'
+require_relative 'view_inventory_workflow.rb'
 require_relative 'bicycle.rb'
-require_relative 'bike_list.rb'
+require_relative 'inventory_list.rb'
 
-bike_list = BikeList.new [ 
+inventory_list = BikeList.new [ 
   Bicycle.new(:mountain),
   Bicycle.new(:mountain),
   Bicycle.new(:bmx),
@@ -14,7 +14,7 @@ bike_list = BikeList.new [
 type = gets.chomp!.to_sym
 
 if Bicycle::TYPES.include?(type)
-  workflow = CustomerViewsBikesWorkflow.new(bike_list, [type])
+  workflow = CustomerViewsBikesWorkflow.new(inventory_list, [type])
   workflow.run
 else
   puts "Type not available"
