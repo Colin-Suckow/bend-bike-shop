@@ -1,4 +1,4 @@
-class Rentable
+module Rentable
 
   attr_accessor :type
 
