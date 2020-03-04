@@ -1,18 +1,11 @@
-require_relative 'bike_list.rb'  
-
 class Bicycle
   
+  include Rentable
+
   TYPES = [:mountain, :bmx, :road]
-
-	attr_accessor :type
-
-  def initialize(type)
-    @type = type
-  end
   
-   def to_s
-  	"Bike: #{type}" 
+  def to_s
+    "Bicycle: #{type}" 
   end
 
 end
-
