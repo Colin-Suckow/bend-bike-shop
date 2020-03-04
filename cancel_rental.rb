@@ -1,4 +1,4 @@
-
+require_relative 'rentable'
 require_relative 'bicycle'
 require_relative 'rental'
 require_relative 'customer'
