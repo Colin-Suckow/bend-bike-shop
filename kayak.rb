@@ -2,7 +2,7 @@ class Kayak
   
   include Rentable
 
-  TYPES = []
+  TYPES = [:recreational, :whitewater, :sport]
   
   def to_s
     "Kayak: #{type}" 
