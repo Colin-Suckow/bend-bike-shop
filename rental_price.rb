@@ -18,5 +18,10 @@ class RentalPrice
   def change_late_fee(desired_late_fee)
   	@late_fee = desired_late_fee
   end
-  
+
+  def to_s
+  	"Current hourly price: #{hourly_price}
+  	\rCurrent late fee: #{late_fee}"
+  end
+
 end
