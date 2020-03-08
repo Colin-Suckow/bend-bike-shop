@@ -1,3 +1,4 @@
+require_relative 'rentable'
 require_relative 'employee_updates_price_workflow'
 require_relative 'bicycle'
 require_relative 'rental'
