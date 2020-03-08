@@ -14,4 +14,9 @@ class RentalPrice
   def change_hourly_price(desired_price)
   	@hourly_price = desired_price
   end
+
+  def change_late_fee(desired_late_fee)
+  	@late_fee = desired_late_fee
+  end
+  
 end
