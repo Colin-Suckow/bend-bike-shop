@@ -11,4 +11,7 @@ class RentalPrice
       hours * @hourly_price + (is_late ? @late_fee : 0)
   end
 
+  def change_hourly_price(desired_price)
+  	@hourly_price = desired_price
+  end
 end
