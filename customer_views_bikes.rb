@@ -1,5 +1,5 @@
 # filename: customer_views_bikes.rb
-
+require_relative 'rentable'
 require_relative 'customer_views_bikes_workflow.rb'
 require_relative 'bicycle.rb'
 require_relative 'bike_list.rb'

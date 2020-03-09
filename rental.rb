@@ -2,11 +2,11 @@ require 'date'
 
 class Rental
 
-  attr_accessor :id, :checkout_time, :duration_in_hours, :bike, :rental_price
+  attr_accessor :id, :checkout_time, :duration_in_hours, :item, :rental_price
 
-  def initialize(id, bike, duration_in_hours, checkout_time = DateTime.now(), rental_price)
+  def initialize(id, item, duration_in_hours, checkout_time = DateTime.now(), rental_price)
     @id = id
-    @bike = bike
+    @item = item
     @checkout_time = checkout_time
     @duration_in_hours = duration_in_hours
     @rental_price = rental_price
@@ -28,7 +28,7 @@ class Rental
   end
 
   def to_s
-		"#{bike}"
+		"#{item}"
   end
 
 end
