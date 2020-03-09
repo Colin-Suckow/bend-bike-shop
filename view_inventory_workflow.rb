@@ -1,6 +1,6 @@
 # filename: view_inventory_workflow.rb
 
-class ViewsInventoryWorkflow
+class ViewInventoryWorkflow
 
   attr_accessor :inventory_list, :type
 
