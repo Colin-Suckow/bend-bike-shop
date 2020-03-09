@@ -7,7 +7,7 @@ class UpdatePrice
     end
 
     def run
-    	puts "Displaying original hourly price and late fee... \n" + @rental_price.to_s
+      puts "Displaying original hourly price and late fee... \n" + @rental_price.to_s
       puts "Updating hourly price and late fee..."		
     	@rental_price.change_hourly_price(@new_hourly_price)
     	@rental_price.change_late_fee(@new_late_fee)

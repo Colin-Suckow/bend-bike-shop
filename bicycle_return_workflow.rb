@@ -7,7 +7,7 @@ class BicycleReturnWorkflow
     end
 
     def run 
-        total_price = @rental.calculate_price(DateTime.now)
+        total_price = @rental.calculate_price_per_hour(DateTime.now)
         #(is_late?(hours_used, @rental.duration_in_hours) ? (puts "Your bike is late!") : ())
         puts "The final bike price is: " + total_price.to_s
     end
